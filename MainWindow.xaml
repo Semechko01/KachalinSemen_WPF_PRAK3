@@ -1,0 +1,115 @@
+﻿<Window x:Class="KachalinSemen_WPF_PRAK3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KachalinSemen_WPF_PRAK3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="900" Background="WhiteSmoke">
+
+
+    <DockPanel Height="584" VerticalAlignment="Top" Background="WhiteSmoke" LastChildFill="False">
+        <Label Padding ="15" DockPanel.Dock ="Top" Content="Билеты в кино" Height ="60" FontStretch="Medium" VerticalAlignment="Top" VerticalContentAlignment="Center" FontSize="20" Foreground="White" FontFamily="Gill Sans MT" Background="MediumPurple"></Label>
+        <Grid Height="460" Width="850" DockPanel.Dock="Top" VerticalAlignment="Top" Margin="14" Background="White">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="410"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            
+            <WrapPanel Orientation="Vertical" Grid.ColumnSpan="1" Width="410">
+                <Grid Grid.ColumnSpan="1" Height="150" Width ="410">
+                    <WrapPanel Orientation="Vertical" Grid.ColumnSpan="1" Height="150" Width="300" VerticalAlignment="Top" HorizontalAlignment="Right">
+                        <ComboBox Height="22" Width="300" Grid.ColumnSpan="1" SelectedIndex="0" MaxDropDownHeight="314" HorizontalAlignment="Right" Margin="0,10,0,0" VerticalAlignment="Top">
+                            <ComboBoxItem Content="Тайна старого маяка"></ComboBoxItem>
+                        </ComboBox>
+                        <DatePicker Height="22" Width="300" HorizontalAlignment="Right"  Grid.ColumnSpan="1" Margin="0,10,0,0" >
+                        </DatePicker>
+                        <ComboBox Height="22" Width="300" HorizontalAlignment="Right"  Grid.ColumnSpan="1" SelectedIndex="0" Margin="0,10,0,0" MaxDropDownHeight="314">
+                            <ComboBoxItem Content="16:00"></ComboBoxItem>
+                        </ComboBox>
+                        <ComboBox Height="22" Width="300" HorizontalAlignment="Right"  Grid.ColumnSpan="1" SelectedIndex="0" Margin="0,10,0,0" MaxDropDownHeight="314">
+                            <ComboBoxItem Content="Зал 1"></ComboBoxItem>
+                        </ComboBox>
+                    </WrapPanel>
+                    <WrapPanel Orientation="Vertical" Grid.ColumnSpan="1" Height="150" Width="100" VerticalAlignment="Top" HorizontalAlignment="Left">
+                        <TextBlock FontSize ="13" Padding="15,13,0,0">Фильм</TextBlock>
+                        <TextBlock FontSize ="13" Padding="15,15,0,0">Дата</TextBlock>
+                        <TextBlock FontSize ="13" Padding="15,15,0,0">Сеанс</TextBlock>
+                        <TextBlock FontSize ="13" Padding="15,15,0,0">Зал</TextBlock>
+                    </WrapPanel>
+                </Grid>
+                <WrapPanel Orientation="Vertical" Grid.ColumnSpan="1" Height="32" Width="360" Background="LightGray">
+                    <TextBlock TextAlignment="Center" Padding ="8" Height="32" Width="360" Text="ЭКРАН"/>
+                </WrapPanel>
+                <WrapPanel Orientation="Vertical" Grid.ColumnSpan="1" Height="130" Width="370">
+                    <WrapPanel Orientation="Horizontal" Height="35" Width="370">
+                        <Button Height="25" Width="80"  Padding="5" Margin="10,10,0,0" Background="#FFEEEDEE">1</Button>
+                        <Button Height="25" Width="80"  Padding="5" Margin="10,10,0,0" Background="#FFEEEDEE">2</Button>
+                        <Button Height="25" Width="80"  Padding="5" Margin="10,10,0,0" Background="#FFEEEDEE">3</Button>
+                        <Button Height="25" Width="80" Padding="5" Margin="10,10,0,0" Background="#FFEEEDEE">4</Button>
+                    </WrapPanel>
+                    <WrapPanel Orientation="Horizontal" Height="35" Width="370">
+                        <Button Height="25" Width="80" Padding="5" Margin="10,10,0,0" Background="#FF989898">5</Button>
+                        <Button Height="25" Width="80"  Padding="5" Margin="10,10,0,0" Background="#FF989898">6</Button>
+                        <Button Height="25" Width="80" Padding="5" Margin="10,10,0,0" Background="#FFEEEDEE">7</Button>
+                        <Button Height="25" Width="80"  Padding="5" Margin="10,10,0,0" Background="#FFEEEDEE">8</Button>
+                    </WrapPanel>
+                    <WrapPanel Orientation="Horizontal" Height="35" Width="370">
+                        <Button Height="25" Width="80"  Padding="5" Margin="10,10,0,0" Background="#FFEEEDEE">9</Button>
+                        <Button Height="25" Width="80"  Padding="5" Margin="10,10,0,0" Background="#FFEEEDEE">10</Button>
+                        <Button Height="25" Width="80"  Padding="5" Margin="10,10,0,0" Background="#FFEEEDEE">11</Button>
+                        <Button Height="25" Width="80"  Padding="5" Margin="10,10,0,0" Background="#FFEEEDEE">12</Button>
+                    </WrapPanel>
+                    
+                </WrapPanel>
+                <TextBlock Margin="0,0,0,0" Width="380" Height="24" FontSize="13">Дополнение</TextBlock>
+                <WrapPanel Orientation="Vertical" Width="370" Height="40">
+                    <CheckBox Margin="2,0,0,0">Попкорн</CheckBox>
+                    <CheckBox Margin="2,0,0,0">Вода</CheckBox>
+                    <CheckBox Margin="2,0,0,0">Сок</CheckBox>
+                    <CheckBox Margin="2,0,0,0">Начос</CheckBox>
+                    <CheckBox Margin="2,0,0,0">3D-Очки</CheckBox>
+                    
+                </WrapPanel>
+            </WrapPanel>
+            <WrapPanel Orientation="Vertical" Grid.ColumnSpan="2" Width="440" HorizontalAlignment="Right" >
+                <TextBlock FontSize="15" Padding="7" Width="425">Покупатель</TextBlock>
+                <Grid Grid.ColumnSpan="1" Height="150" Width ="440">
+                    <WrapPanel Orientation="Vertical" Grid.ColumnSpan="1" Height="150" Width="300" VerticalAlignment="Top" HorizontalAlignment="Right">
+                        <TextBox Height="22" Width="300" HorizontalAlignment="Right"  Grid.ColumnSpan="1" Margin="0,10,0,0">
+                        </TextBox>
+                        <TextBox Height="22" Width="300" HorizontalAlignment="Right"  Grid.ColumnSpan="1" Margin="0,10,0,0">
+                        </TextBox>
+                        <TextBox Height="22" Width="300" HorizontalAlignment="Right"  Grid.ColumnSpan="1" Margin="0,10,0,0">
+                        </TextBox>
+                        <ComboBox Height="22" Width="300" HorizontalAlignment="Right"  Grid.ColumnSpan="1" SelectedIndex="0" Margin="0,10,0,0" MaxDropDownHeight="314">
+                            <ComboBoxItem Content="Банковская карта"></ComboBoxItem>
+                        </ComboBox>
+                    </WrapPanel>
+                    <WrapPanel Orientation="Vertical" Grid.ColumnSpan="1" Height="150" Width="140" VerticalAlignment="Top" HorizontalAlignment="Left">
+                        <TextBlock FontSize ="13" Padding="15,13,0,0">Имя покупателя</TextBlock>
+                        <TextBlock FontSize ="13" Padding="15,15,0,0">Телефон</TextBlock>
+                        <TextBlock FontSize ="13" Padding="15,15,0,0">Электронная почта</TextBlock>
+                        <TextBlock FontSize ="13" Padding="15,15,0,0">Способ оплаты</TextBlock>
+                    </WrapPanel>
+                </Grid>
+                <StackPanel Height="170" Width="400" Orientation="Vertical">
+                    <TextBlock Padding="4">Ряд: 2</TextBlock>
+                    <TextBlock Padding="4">Места: 5,6</TextBlock>
+                    <TextBlock Padding="4">Цена билета: 450₽</TextBlock>
+                    <Button Height="28" Margin="0,5,0,0">Забронировать</Button>
+                    <Button Height="28" Margin="0,5,0,0">Отмена</Button>
+                </StackPanel>
+            </WrapPanel>
+        </Grid>
+        <Label Padding="15" Content="Выбрано мест: 2 · Итого: 900 ₽" Height ="40" Width="900" VerticalAlignment="Bottom" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontSize="10" Foreground="DimGray" FontFamily="Gill Sans MT" Background="LightGray"></Label>
+
+    </DockPanel>
+
+
+
+
+</Window>

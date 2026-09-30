@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34616.47
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KachalinSemen_WPF_PRAK3", "KachalinSemen_WPF_PRAK3.csproj", "{67EF4B6F-A9DD-4BD9-886F-179312A0EBAC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{67EF4B6F-A9DD-4BD9-886F-179312A0EBAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67EF4B6F-A9DD-4BD9-886F-179312A0EBAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67EF4B6F-A9DD-4BD9-886F-179312A0EBAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67EF4B6F-A9DD-4BD9-886F-179312A0EBAC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {685BEC63-9BF0-4C34-A9B7-4A868D70BEA8}
+	EndGlobalSection
+EndGlobal

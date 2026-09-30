@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "KachalinSemen_WPF_PRAK3/1.0.0": {
+        "runtime": {
+          "KachalinSemen_WPF_PRAK3.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "KachalinSemen_WPF_PRAK3/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
